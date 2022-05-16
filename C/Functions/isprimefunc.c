@@ -5,8 +5,7 @@ int isprime(int a){
         {
             return (0);
         }
-
-    }
+        }
     return (1);
 }
 void main()
