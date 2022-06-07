@@ -4,6 +4,7 @@
 // a structure to represent an edge in graph
 struct Edge
 {  
+    
     int src, dest;
 };
 // a structure to represent a graph
