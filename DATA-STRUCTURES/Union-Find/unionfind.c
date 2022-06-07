@@ -4,7 +4,7 @@
 // a structure to represent an edge in graph
 struct Edge
 {  
-    
+
     int src, dest;
 };
 // a structure to represent a graph
@@ -63,7 +63,7 @@ int main()
 {
     int V = 12, E = 12;
     struct Graph* graph = createGraph(V, E);
-    //add edge 0-0
+//add edge 0-0
     graph->edge[0].src = 0;
     graph->edge[0].dest = 0;
 // add edge 0-1
