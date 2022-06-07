@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-// a structure to represent an edge in graph
+// A structure to represent an edge in graph
 struct Edge
 {  
 
     int src, dest;
 };
-// a structure to represent a graph
+// A structure to represent a graph
 struct Graph
 {
     // V-> Number of vertices, E-> Number of edges
@@ -25,14 +25,14 @@ struct Graph* createGraph(int V, int E)
 graph->edge = (struct Edge*) malloc( graph->E *sizeof(struct Edge));
     return graph;
 }
-// A utility function to find the subset of an element i
+// An utility function to find the subset of an element i
 int find(int parent[], int i)
 {
-    if (parent[i] == -1)
+    if (parent[i] ==-1)
         return i;
-    return find(parent, parent[i]);
+    return find(parent,parent[i]);
 }
-// A utility function to do union of two subsets 
+// An utility function to do union of two subsets 
 void Union(int parent[], int x, int y)
 {
     parent[x] = y;
@@ -102,6 +102,6 @@ int main()
     if (isCycle(graph))
         printf( "graph contains cycle" );
     else
-        printf( "graph doesn't contain cycle" );
+        printf( "graph doesn't contain cycle");
     return 0;
 }
